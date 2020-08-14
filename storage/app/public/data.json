@@ -2,28 +2,60 @@
     "title" : "Favour Shoes",
     "products" : [
         {
-            "image-title" : "shoe01",
-            "name" : "name",
-            "desc" : "desc",
-            "price" : "10.00"
+            "imageTitle" : "nike_shoe",
+            "name" : "Nike Sportswear",
+            "desc" : "Air Max Traix 96",
+            "price" : 120.00,
+            "discount" : 98.00
         },
         {
-            "image-title" : "shoe01",
-            "name" : "name",
-            "desc" : "desc",
-            "price" : "10.00"
+            "imageTitle" : "nike_shoe",
+            "name" : "Nike Sportswear",
+            "desc" : "Air Max Traix 96",
+            "price" : 120.00,
+            "discount" : 98.00
         },
         {
-            "image-title" : "shoe01",
-            "name" : "name",
-            "desc" : "desc",
-            "price" : "10.00"
+            "imageTitle" : "nike_shoe",
+            "name" : "Nike Sportswear",
+            "desc" : "Air Max Traix 96",
+            "price" : 120.00,
+            "discount" : 98.00
         },
         {
-            "image-title" : "shoe01",
-            "name" : "name",
-            "desc" : "desc",
-            "price" : "10.00"
+            "imageTitle" : "nike_shoe",
+            "name" : "Nike Sportswear",
+            "desc" : "Air Max Traix 96",
+            "price" : 120.00,
+            "discount" : 98.00
+        },
+        {
+            "imageTitle" : "nike_shoe",
+            "name" : "Nike Sportswear",
+            "desc" : "Air Max Traix 96",
+            "price" : 120.00,
+            "discount" : 98.00
+        },
+        {
+            "imageTitle" : "nike_shoe",
+            "name" : "Nike Sportswear",
+            "desc" : "Air Max Traix 96",
+            "price" : 120.00,
+            "discount" : 120.00
+        },
+        {
+            "imageTitle" : "nike_shoe",
+            "name" : "Nike Sportswear",
+            "desc" : "Air Max Traix 96",
+            "price" : 120.00,
+            "discount" : 98.00
+        },
+        {
+            "imageTitle" : "nike_shoe",
+            "name" : "Nike Sportswear",
+            "desc" : "Air Max Traix 96",
+            "price" : 120.00,
+            "discount" : 98.00
         }
     ]
 }
