@@ -64,26 +64,139 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Testing shop functionality
-                </div>
+        <div class="banner">
+    <div class="row">
+        <div class="col-4 m-tp-md">
+            <a href="#" traget="_blank" class="logo">{{ $contents["title"] }}</a>
+        </div>
+        <div class="col-4 m-tp-md">
+            <div class="search-bar">
+                <input type="text" class="search-input">
+                <input type="button" class="serach-btn">
             </div>
         </div>
+        <div class="btn-groups col-4 m-tp-md">
+            <a href="#" traget="_blank"><img class="icon-login" src = "/images/login.png" ></a>
+            <a href="#" traget="_blank"><img class="icon-cart m-lft-sm " src = "/images/cart.png" ></a>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="flex-container">
+        <div>
+            <a href="/item" traget="_blank" class="imgbg"><img src = "/images/nike_shoe.png" ></a>
+            <a href="#" traget="_blank" class="link">
+                <p>Nike Sportswear</p>
+            </a>
+            <a href="/item" traget="_blank" class="link">
+                <p><strong>Air Max Traix 96</strong></p>
+                <p> 
+                    <span class="text-red">$98</span>
+                    <span class="text-line-through">($120)</span>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="/item" traget="_blank" class="imgbg"><img src = "/images/nike_shoe.png" ></a>
+            <a href="#" traget="_blank" class="link">
+                <p>Nike Sportswear</p>
+            </a>
+            <a href="/item" traget="_blank" class="link">
+                <p><strong>Air Max Traix 96</strong></p>
+                <p> 
+                    <span class="text-red">$98</span>
+                    <span class="text-line-through">($120)</span>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="/item" traget="_blank" class="imgbg"><img src = "/images/nike_shoe.png" ></a>
+            <a href="#" traget="_blank" class="link">
+                <p>Nike Sportswear</p>
+            </a>
+            <a href="/item" traget="_blank" class="link">
+                <p><strong>Air Max Traix 96</strong></p>
+                <p> 
+                    <span class="text-red">$98</span>
+                    <span class="text-line-through">($120)</span>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="/item" traget="_blank" class="imgbg"><img src = "/images/nike_shoe.png" ></a>
+            <a href="#" traget="_blank" class="link">
+                <p>Nike Sportswear</p>
+            </a>
+            <a href="/item" traget="_blank" class="link">
+                <p><strong>Air Max Traix 96</strong></p>
+                <p> 
+                    <span class="text-red">$98</span>
+                    <span class="text-line-through">($120)</span>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="/item" traget="_blank" class="imgbg"><img src = "/images/nike_shoe.png" ></a>
+            <a href="#" traget="_blank" class="link">
+                <p>Nike Sportswear</p>
+            </a>
+            <a href="/item" traget="_blank" class="link">
+                <p><strong>Air Max Traix 96</strong></p>
+                <p> 
+                    <span class="text-red">$98</span>
+                    <span class="text-line-through">($120)</span>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="/item" traget="_blank" class="imgbg"><img src = "/images/nike_shoe.png" ></a>
+            <a href="#" traget="_blank" class="link">
+                <p>Nike Sportswear</p>
+            </a>
+            <a href="/item" traget="_blank" class="link">
+                <p><strong>Air Max Traix 96</strong></p>
+                <p> 
+                    <span class="text-red">$98</span>
+                    <span class="text-line-through">($120)</span>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="/item" traget="_blank" class="imgbg"><img src = "/images/nike_shoe.png" ></a>
+            <a href="#" traget="_blank" class="link">
+                <p>Nike Sportswear</p>
+            </a>
+            <a href="/item" traget="_blank" class="link">
+                <p><strong>Air Max Traix 96</strong></p>
+                <p> 
+                    <span class="text-red">$98</span>
+                    <span class="text-line-through">($120)</span>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="/item" traget="_blank" class="imgbg"><img src = "/images/nike_shoe.png" ></a>
+            <a href="#" traget="_blank" class="link">
+                <p>Nike Sportswear</p>
+            </a>
+            <a href="/item" traget="_blank" class="link">
+                <p><strong>Air Max Traix 96</strong></p>
+                <p> 
+                    <span class="text-red">$98</span>
+                    <span class="text-line-through">($120)</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+                <div class="content">
+                    @foreach ($contents["products"] as $product)
+                        <p>({{ $loop->index }}) {{ $product['name'] }} - {{ $product['desc'] }}</p>
+                        @if ($loop->first)
+                            <span> - First item</span>
+                        @endif
+                    @endforeach
+                </div>
+            
     </body>
 </html>

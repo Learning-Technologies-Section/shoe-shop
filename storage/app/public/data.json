@@ -1,0 +1,29 @@
+{
+    "title" : "Favour Shoes",
+    "products" : [
+        {
+            "image-title" : "shoe01",
+            "name" : "name",
+            "desc" : "desc",
+            "price" : "10.00"
+        },
+        {
+            "image-title" : "shoe01",
+            "name" : "name",
+            "desc" : "desc",
+            "price" : "10.00"
+        },
+        {
+            "image-title" : "shoe01",
+            "name" : "name",
+            "desc" : "desc",
+            "price" : "10.00"
+        },
+        {
+            "image-title" : "shoe01",
+            "name" : "name",
+            "desc" : "desc",
+            "price" : "10.00"
+        }
+    ]
+}
