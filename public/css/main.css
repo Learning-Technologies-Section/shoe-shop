@@ -1,0 +1,231 @@
+/* Common css */
+
+@font-face {
+    font-family: "Berlin Sans FB Demi";
+    src: url("fonts/BerlinSansFBDemiBold.ttf") format("truetype");
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.content,
+.banner,
+.foot {
+    text-align: center;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+.m-lft-sm {
+    margin-left: 10px;
+}
+
+.m-tp-md {
+    margin-top: 20px;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+/* Shop page css */
+
+.banner {
+    background: url('/images/shoe_bg.png') no-repeat fixed 50% -130px, linear-gradient(60deg, #f7d6d6 60%, #ccf0ff 50%);
+    height: 450px;
+}
+
+.search-bar {
+    margin: 0 auto;
+    width: 250px;
+    height: 25px;
+    background: #fff;
+    border: 2px solid white;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+
+.search-input {
+    width: 200px;
+    height: 16px;
+    background-size: 18px;
+    border: none;
+    line-height: 16px;
+}
+
+.serach-btn {
+    margin-top: 3px;
+    width: 20px;
+    height: 18px;
+    border: none;
+    background: url('/images/magnifying_icon.png') no-repeat right center;
+    background-size: 18px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 30px auto 50px auto;
+}
+
+.flex-container img {
+    margin: 50px 0;
+}
+
+.flex-container .imgbg {
+    background-color: #f1f1f1;
+    display: block;
+}
+
+.flex-container .link {
+    color: #636b6f;
+    text-decoration: none;
+}
+
+.flex-container .link:hover {
+    color: #000;
+}
+
+.flex-container>div {
+    width: 22%;
+    margin: 10px;
+    line-height: 3px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.logo {
+    font-family: Berlin Sans FB Demi;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 1000;
+    color: #000;
+}
+
+.icon-login {
+    width: 18px;
+}
+
+.icon-cart {
+    width: 20px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links>a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.foot {
+    background: #001948;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
