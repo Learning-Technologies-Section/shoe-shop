@@ -17,5 +17,9 @@
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0"
+    },
+    "dependencies": {
+        "babel-polyfill": "^6.26.0",
+        "regenerator-runtime": "^0.13.7"
     }
 }
