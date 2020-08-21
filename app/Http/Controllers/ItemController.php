@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Support\Facades\Storage;
 
-
 class ItemController extends Controller
 {
     /**
@@ -14,9 +13,19 @@ class ItemController extends Controller
      *
      * @return View
      */
-    public function show()
+    public function show($id)
     {
         $contents = json_decode(Storage::get('/public/data.json'), true);
-        return view('item', ['contents' => $contents]);
+        $item = $this->getItemByID($id, $contents);
+        return view('item', ['item' => $item, 'title' => $contents['title']]);
+    }
+
+    private function getItemByID($id, $contents) 
+    {
+        // get the selected item
+        $item = array_filter($contents["products"], function ($item) use ($id) {
+            if ($item["id"] == $id) return $item;
+        });
+        return array_values($item)[0];
     }
 }

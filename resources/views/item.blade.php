@@ -1,27 +1,12 @@
 @extends('layouts.layout')  
 
 @section('content')
-<div class="banner topbar-hight">
-    <div class="row">
-        <div class="col-4 m-tp-md">
-            <a href="#" traget="_blank" class="logo">{{ $contents["title"] }}</a>
-        </div>
-        <div class="col-4 m-tp-md">
-            <div class="search-bar">
-                <input type="text" class="search-input">
-                <input type="button" class="serach-btn">
-            </div>
-        </div>
-        <div class="btn-groups col-4 m-tp-md">
-            <a href="#" traget="_blank"><img class="icon-login" src = "/images/login.png" ></a>
-            <a href="#" traget="_blank"><img class="icon-cart m-lft-sm" src = "/images/cart.png" ></a>
-        </div>
-    </div>
-</div>
+
+@include('header')
 
 <div class="content">
     <h4>
-        <a href="#" target="_blank" class="text-decoration-none">White sport shoes - Nike</a>
+        <a href="#" target="_blank" class="text-decoration-none">{{ $item["name"] }} - {{ $item["imageTitle"] }}</a>
     </h4>
     <a href="#" class="left-arrow"><img src="/images/arrow-left.png"/></a>
     <a href="#" class="right-arrow"><img src="/images/arrow-right.png"/></a>
@@ -42,7 +27,7 @@
                 <a href="#" class="shoe-color m-lft-sm bg-green"></a>
                 <a href="#" class="shoe-color m-lft-sm bg-blue"></a>
                 <span class="m-lft-sm">price:</span>
-                <span class="text-red m-lft-sm"><strong>$98</strong></span>
+                <span class="text-red m-lft-sm"><strong>${{$item["discount"]}}</strong></span>
             </p>
         </div>
         <p class="font-12 m-tp-md"> 

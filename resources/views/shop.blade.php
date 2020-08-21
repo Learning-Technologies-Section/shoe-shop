@@ -22,7 +22,7 @@
     <div class="flex-container">
         @foreach ($contents["products"] as $product)
             <div>
-                <a href="/item" traget="_blank" class="imgbg"><img src = "/images/{{ $product['imageTitle'] }}.png" ></a>
+                <a href="/item/<?= $product["id"]; ?>" traget="_blank" class="imgbg"><img src = "/images/{{ $product["imageTitle"] }}.png" ></a>
                 <a href="#" traget="_blank" class="link">
                     <p>{{ $product["name"] }}</p>
                 </a>
