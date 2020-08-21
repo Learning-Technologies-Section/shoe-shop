@@ -26,6 +26,6 @@ class ItemController extends Controller
         $item = array_filter($contents["products"], function ($item) use ($id) {
             if ($item["id"] == $id) return $item;
         });
-        return $item;
+        return $item[0];
     }
 }
