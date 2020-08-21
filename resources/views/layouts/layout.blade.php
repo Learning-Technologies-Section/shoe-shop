@@ -11,7 +11,7 @@
         <link href="//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi" rel="stylesheet" type="text/css"/> 
 
         <!-- Styles -->
-        <link href="css/main.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
     </head>
     <body>
         @yield('content')
