@@ -16,7 +16,7 @@
     <body>
         @yield('content')
         <div class="foot">
-            <p>Conditions of Use Private Notice Interest-Based Ads © 2008-2020, Faovershoes.com, Inc. or its affiliates</p>
+            <p>Conditions of Use Private Notice Interest-Based Ads © 2008-2020, Favourshoes.com, Inc. or its affiliates</p>
         </div>
     </body>
 </html>

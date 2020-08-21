@@ -19,4 +19,10 @@ class ShopController extends Controller
         $contents = json_decode(Storage::get('/public/data.json'), true);
         return view('shop', ['contents' => $contents]);
     }
+
+    public function cart()
+    {
+        $contents = json_decode(Storage::get('/public/data.json'), true);
+        return view('cart', ['contents' => $contents]);
+    }
 }

@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'ShopController@show');
 
+Route::get('/cart', 'ShopController@cart');
+
 Route::get('/item/{id}', 'ItemController@show');

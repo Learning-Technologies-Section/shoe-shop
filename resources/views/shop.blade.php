@@ -14,7 +14,7 @@
         </div>
         <div class="btn-groups col-4 m-tp-md">
             <a href="#" traget="_blank"><img class="icon-login" src = "/images/login.png" ></a>
-            <a href="#" traget="_blank"><img class="icon-cart m-lft-sm " src = "/images/cart.png" ></a>
+            <a href="/cart" traget="_blank"><img class="icon-cart m-lft-sm " src = "/images/cart.png" ></a>
         </div>
     </div>
 </div>
