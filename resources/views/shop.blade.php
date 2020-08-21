@@ -14,7 +14,7 @@
         </div>
         <div class="btn-groups col-4 m-tp-md">
             <a href="#" traget="_blank"><img class="icon-login" src = "/images/login.png" ></a>
-            <a href="#" traget="_blank"><img class="icon-cart m-lft-sm " src = "/images/cart.png" ></a>
+            <a href="#" traget="_blank"><img class="icon-cart m-lft-sm" src = "/images/cart.png" ></a>
         </div>
     </div>
 </div>
@@ -22,7 +22,7 @@
     <div class="flex-container">
         @foreach ($contents["products"] as $product)
             <div>
-                <a href="/item" traget="_blank" class="imgbg"><img src = "/images/{{ $product["imageTitle"] }}.png" ></a>
+                <a href="/item" traget="_blank" class="imgbg"><img src = "/images/{{ $product['imageTitle'] }}.png" ></a>
                 <a href="#" traget="_blank" class="link">
                     <p>{{ $product["name"] }}</p>
                 </a>

@@ -7,20 +7,56 @@
 
 html,
 body {
-    background-color: #fff;
-    color: #636b6f;
+    background-color: #001948;
+    color: #000;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
     height: 100vh;
     margin: 0;
+    font-size: 16px;
 }
 
 img {
     width: 100%;
 }
 
+.btn {
+    width: 130px;
+    line-height: 24px;
+    padding: 3px;
+    color: #000;
+    background-color: #6dcff6;
+    border-radius: 2px;
+    border: 1px solid #6dcff6;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.float-r {
+    float: right;
+}
+
+.float-l {
+    float: left;
+}
+
+.clear-b {
+    clear: both;
+}
+
+.flex-box {
+    display: flex;
+}
+
 .position-ref {
     position: relative;
+}
+
+.text-decoration-none {
+    color: #636b6f;
+    text-decoration: none;
 }
 
 .content,
@@ -29,8 +65,21 @@ img {
     text-align: center;
 }
 
+.content {
+    background: white;
+    overflow: hidden;
+}
+
 .text-red {
-    color: red;
+    color: red!important;
+}
+
+.text-blue {
+    color: steelblue!important;
+}
+
+.text-white {
+    color: fff!important;
 }
 
 .text-line-through {
@@ -51,6 +100,40 @@ img {
 
 [class*="col-"] {
     float: left;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+h1,
+.h1 {
+    font-size: 4em;
+}
+
+h2,
+.h2 {
+    font-size: 2.2em;
+}
+
+h3,
+.h3 {
+    font-size: 2.1em;
+}
+
+h4,
+.h4 {
+    font-size: 1.7em;
+}
+
+h5,
+.h5 {
+    font-size: 1.5em;
+}
+
+h6,
+.h6 {
+    font-size: 1em;
 }
 
 .col-1 {
@@ -228,4 +311,88 @@ img {
     content: "";
     clear: both;
     display: table;
+}
+
+
+/* Item page css */
+
+.topbar-hight {
+    height: 80px;
+}
+
+.porduct {
+    width: 410px;
+    margin: 0 auto;
+}
+
+.porduct-details {
+    width: 380px;
+    height: 320px;
+    padding: 60px 20px 0px 10px;
+    background: #f6f6f6;
+    display: block;
+}
+
+.item-btn {
+    justify-content: space-between;
+    padding: 20px 0 100px 0;
+}
+
+.flex-content-mid {
+    justify-content: center;
+}
+
+.shoe-size {
+    width: 17px;
+    height: 17px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.shoe-size:hover {
+    width: 15px;
+    height: 15px;
+    background: #6dcff6;
+    border: 1px solid #6dcff6;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.shoe-color {
+    width: 15px;
+    height: 15px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    background: red;
+}
+
+.bg-green {
+    background: seagreen;
+}
+
+.bg-blue {
+    background: steelblue;
+}
+
+.shoe-color:hover {
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    border: 2px solid #6dcff6;
+    background: #fff;
+}
+
+.left-arrow {
+    position: fixed;
+    left: 10%;
+    top: 45%;
+}
+
+.right-arrow {
+    position: fixed;
+    right: 10%;
+    top: 45%;
 }

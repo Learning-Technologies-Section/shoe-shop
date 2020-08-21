@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use Illuminate\Support\Facades\Storage;
+
 
 class ItemController extends Controller
 {
@@ -14,6 +16,7 @@ class ItemController extends Controller
      */
     public function show()
     {
-        return view('item');
+        $contents = json_decode(Storage::get('/public/data.json'), true);
+        return view('item', ['contents' => $contents]);
     }
 }
