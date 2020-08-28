@@ -20,6 +20,20 @@ img {
     width: 100%;
 }
 
+ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+dl,
+dt,
+dd {
+    padding: 0;
+    margin: 0;
+}
+
 .btn {
     width: 130px;
     line-height: 24px;
@@ -32,6 +46,10 @@ img {
 
 .btn:hover {
     color: #fff;
+}
+
+.wid-200 {
+    width: 200px;
 }
 
 .float-r {
@@ -82,12 +100,28 @@ img {
     color: fff!important;
 }
 
+.text-align-r {
+    text-align: right;
+}
+
 .text-line-through {
     text-decoration: line-through;
 }
 
 .m-lft-sm {
     margin-left: 10px;
+}
+
+.m-lft-md {
+    margin-left: 20px;
+}
+
+.m-lft-lg {
+    margin-left: 40px;
+}
+
+.m-tp-sm {
+    margin-top: 5px;
 }
 
 .m-tp-md {
@@ -395,4 +429,46 @@ h6,
     position: fixed;
     right: 10%;
     top: 45%;
+}
+
+
+/*checkout view css*/
+
+.checkout-container {
+    width: 80%;
+    margin: 30px auto 50px auto;
+}
+
+.checkout-container .link-btn {
+    text-decoration: none;
+}
+
+.checkout-container li {
+    padding: 20px 0;
+    line-height: 25px;
+}
+
+.delete-btn:hover {
+    font-weight: 700;
+}
+
+.justify-space {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.bottom-line {
+    border-bottom: 1px solid black;
+}
+
+.shoe-select-color {
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    border: 2px solid #6dcff6;
+    background: #fff;
+    display: block;
 }
